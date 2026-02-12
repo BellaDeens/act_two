@@ -1,23 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-    
+    <link rel="stylesheet" href="css/styles.css"> 
     <title>Personal Online CV</title>
 </head>
 
 <body>
-
-    <header>
+    <main>
+        <div class="container">
+    <header class="card">
         <h1>Archelle B. Aparici</h1>
-        <p>IT Student of USTP</p>
-
-        <img src="Self_Photo.jpg" alt="Profile Photo" width="170">
+        <p id="subtitle">IT Student of USTP</p>
+        
     </header>
 
-    <main>
-
-        <section id="about">
+        <section id="about" class="card">
             <h2>About Me</h2>
+            <img src="images/Self_Photo.jpg" alt="Profile Photo" width="170">
+            <p>Email:
+                <a href="mailto:archelleaparici@gmail.com" target="_blank">archelleaparici@gmail.com</a>
+            </p>
+            <p>
+                <a href="https://github.com/BellaDeens" target="_blank">Github</a>
+            </p>
             <p>
                 I am an Information Technology student that is willing to learn. I enjoy learning new 			technologies and applying them in practical projects. I also enjoy drawing and sketching.
             </p>
@@ -28,7 +33,7 @@
             </p>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>Skills attained</h2>
             <ul>
                 <li>Java</li>
@@ -40,10 +45,10 @@
             border: 1px solid black; border-collapse:collapse; padding:8px;
             }
         </style>
-        <section id="education">
+        <section id="education" class="card">
             <h2>Education</h2>
 
-            <table style="border:1px solid black;" border-style="2px solid black;">
+            <table>
                 <tr>
                     <th >Level</th>
                     <th>School</th>
@@ -72,14 +77,9 @@
             </table>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="card">
             <h2>Contact me here</h2>
- 		<p>
-                <a href="https://www.facebook.com/ellehcra.icirapa" target="_blank">Facebook</a>
-        </p>
-		<p>
-                <a href="https://github.com/BellaDeens" target="_blank">Github</a>
-        </p>
+ 		
 		
 		<form>
         <label>Name:</label><br>
@@ -101,6 +101,7 @@
         <footer>
             <p>&copy; 2026 Archelle Aparici. All rights reserved.</p>
         </footer>
+    </div>
     </main>
 </body>
 </html>
