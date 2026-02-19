@@ -8,12 +8,14 @@
 <body>
     <main>
         <div class="container">
+            
+    <button id="themeToggle" >Toggle Dark Mode</button> 
     <header class="card">
         <h1>Archelle B. Aparici</h1>
         <p id="subtitle">IT Student of USTP</p>
         
     </header>
-
+        
         <section id="about" class="card">
             <h2>About Me</h2>
             <img src="images/Self_Photo.jpg" alt="Profile Photo" width="170">
@@ -33,7 +35,8 @@
             </p>
         </section>
 
-        <section id="skills" class="card">
+        <button id="toggleSkills">Show/Hide Skills</button> 
+        <section class="card" id="skillsSection">
             <h2>Skills attained</h2>
             <ul>
                 <li>Java</li>
@@ -82,18 +85,16 @@
  		
 		
 		<form>
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+        <input type="text" id="name" placeholder="Name"><br>
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <input type="email" id="email" placeholder="Email"><br>
 
-        <label>Message:</label><br>
-        <textarea name="message"></textarea><br><br>
+        <label>Message:</label>
+        <textarea name="message"></textarea><br>
 
-        <button type="submit">Send</button>
+        <button type="submit" id="submitBtn">Send</button>
     	</form>
-		
+        
             
         </section>
 
@@ -103,5 +104,7 @@
         </footer>
     </div>
     </main>
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
