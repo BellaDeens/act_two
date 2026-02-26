@@ -70,9 +70,6 @@ table {
       background-color: #7b3933;
       color: white;
   }
-  td {
-      color: 542f31;
-  }
       
       
 form {
@@ -98,8 +95,8 @@ button:hover {
   background-color: #542f31;
 }
 
-.dark-mode {
-  background-image: url(src/assets/images/background_dark.jpg);
+body .dark-mode {
+  background-image: url(src/assets/images/background_dark.jpg) !important;
   background-color: #311800;
   color:white;
 }
