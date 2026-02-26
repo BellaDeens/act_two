@@ -3,7 +3,11 @@ console.log("submitBtn")
 const themeToggle = document.getElementById("themeToggle");
 
 themeToggle.addEventListener("click",function(){
-    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.toggle("dark-mode")){
+        themeToggle.textContent = "Toggle Light Mode";
+    } else {
+        themeToggle.textContent = "Toggle Dark Mode";
+    }
 });
 
 const toggleSkills = document.getElementById("toggleSkills");
