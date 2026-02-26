@@ -10,7 +10,7 @@ body {
   display:inherit;
   background-color: #311800;
   padding: 20px;
-  background-image: url("src/assets/images/background.webp");
+  background-image: url(/images/background.webp);
   }
 
 .container {
@@ -96,7 +96,7 @@ button:hover {
 }
 
 body .dark-mode {
-  background-image: url(src/assets/images/background_dark.jpg) !important;
+  background-image: url(/images/background_dark.jpg) !important;
   background-color: #311800;
   color:white;
 }
