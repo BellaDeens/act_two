@@ -4,7 +4,7 @@ function About() {
     return (
         <section id="about" class="card">
             <h2>About Me</h2>
-            <img src="{profileImg}" alt="Profile Photo" width="170"></img>
+            <img src={profileImg} alt="Profile Photo" width="170"></img>
             <p>Email:
                 <a href="mailto:archelleaparici@gmail.com" target="_blank">archelleaparici@gmail.com</a>
             </p>
