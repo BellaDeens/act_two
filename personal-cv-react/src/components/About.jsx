@@ -1,9 +1,9 @@
 import profileImg from '../assets/images/Self_Photo.jpg';
+import Card from "./Card";
 
 function About() {
     return (
-        <section id="about" class="card">
-            <h2>About Me</h2>
+        <Card title="About Me">
             <img src={profileImg} alt="Profile Photo" width="170"></img>
             <p>Email:
                 <a href="mailto:archelleaparici@gmail.com" target="_blank">archelleaparici@gmail.com</a>
@@ -19,7 +19,7 @@ function About() {
                 View my art here:
                 <a href="https://www.instagram.com/belladeens/" target="_blank">Instagram</a>
             </p>
-        </section>
+        </Card>
     );
 }
 

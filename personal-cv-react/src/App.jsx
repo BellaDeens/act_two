@@ -8,20 +8,47 @@ import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+  ];
+  const education = [
+    {
+      year: "2024-Present",
+      program: "BS Information Technology",
+      school: "USTP - CDO"
+    },
+    {
+      year: "2020-2024",
+      program: "Senior High School - STEM",
+      school: "USTP - Senior High School"
+    },
+    {
+      year: "2016-2020",
+      program: "Junior High School",
+      school: "Philippine Science High School - Northern Mindanao Campus"
+    },
+    {
+      year: "2010-206",
+      program: "Elementary",
+      school: "City Central School"
+    }
+  ];
+
   return (
     <div className={darkMode ? "dark-mode" : ""}>
       <div className="container">
         <button onClick={() => setDarkMode(!darkMode)}>
-        Toggle Dark Mode
+        {darkMode?"Toggle Light Mode" : "Toggle Dark Mode"}
         </button>
         <Header />
         <About />
-        <Skills />
-        <Education />
+        <Skills skills={skills} />
+        <Education education={education} />
         <Contact /> 
         <Footer/>
-        <script src="js/script.js"></script>
       </div>
     </div>
    
