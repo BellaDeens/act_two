@@ -1,6 +1,6 @@
 function Header() {
     return (
-    <header class="card">
+    <header className="card">
     <h1>Archelle B. Aparici</h1>
     <p id="subtitle">IT Student of USTP</p>
     </header>
